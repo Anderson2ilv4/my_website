@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: fit-content;
+    border: red solid 1px;
+}
