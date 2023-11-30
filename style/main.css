@@ -11,6 +11,16 @@ header {
     height: fit-content;
     border: red solid 1px;
 }
+header .actions {
+    border: black solid 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+/*temporary*/
+.actions p {
+    border: red solid 1px;
+}
 main {
     height: fit-content;
     border: blue solid 2px;
