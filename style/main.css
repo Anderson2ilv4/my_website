@@ -6,6 +6,7 @@ body {
 .container {
     border: black solid 2px;
 }
+/*--------------------------------------*/
 
 header {
     height: fit-content;
@@ -21,10 +22,27 @@ header .actions {
 .actions p {
     border: red solid 1px;
 }
+/*---------------------------------------*/
 main {
     height: fit-content;
     border: blue solid 2px;
 }
+main .presentation {
+    height: fit-content;
+    border: purple solid ;
+}
+main .knowledge {
+    height: fit-content;
+    border: black solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+}
+main .knowledge .items {
+    width: 100px;
+    height: 100px;
+    border: black solid 1px;
+}
+/*---------------------------------------*/
 footer {
     height: fit-content;
     border: red solid 2px;
