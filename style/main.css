@@ -29,3 +29,15 @@ footer {
     height: fit-content;
     border: red solid 2px;
 }
+footer .info {
+    border: black solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 10px;
+}
+footer .social {
+    border: blue solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
