@@ -58,7 +58,18 @@ main .projects .preview {
     border-radius: 10px;
     width: 300px;
     height: 200px;
-
+}
+main .youtube-videos {
+    display: flex;
+    justify-content: space-evenly;
+    border: black solid 1px;
+    padding: 10px 0px;
+}
+main .youtube-videos .videos {
+    width: 300px;
+    height: 200px;
+    border: black solid 1px;
+    border-radius: 10px;
 }
 /*---------------------------------------*/
 footer {
