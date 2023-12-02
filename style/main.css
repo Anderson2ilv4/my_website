@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .container {
     border: black solid 2px;
