@@ -30,6 +30,12 @@ header .header-cover {
     width: 100%;
     height: 300px;
 }
+header .dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 60px;
+}
 header #dark-mode {
     width: 20px;
 }
