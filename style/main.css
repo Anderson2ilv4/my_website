@@ -19,7 +19,6 @@ header img {
     width: 20px;
 }
 header .actions {
-    border: black solid 1px;
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
@@ -43,11 +42,9 @@ header #dark-mode {
 }
 /*temporary*/
 .actions div {
-    border: red solid 1px;
     margin: 5px;
 }
 header .initial-content {
-    border: purple solid 2px;
     display: flex;
     padding: 0px 20px;
 }
