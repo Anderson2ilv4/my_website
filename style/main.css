@@ -65,7 +65,7 @@ main {
 }
 main .presentation {
     height: fit-content;
-    border: purple solid ;
+    /*border: purple solid ;*/
 }
 main .knowledge {
     height: fit-content;
@@ -76,7 +76,10 @@ main .knowledge {
 main .knowledge .items {
     width: 100px;
     height: 100px;
-    border: black solid 1px;
+    /*border: black solid 1px;*/
+}
+main .knowledge img {
+    width: 100px;
 }
 main .courses {
     height: fit-content;
