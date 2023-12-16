@@ -118,17 +118,52 @@ main .project2 .preview {
     min-width: 300px;
     min-height: 200px;
 }
+main #videos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 main .youtube-videos {
     display: flex;
-    justify-content: space-evenly;
-    border: black solid 1px;
+    gap: 20px;
     padding: 10px 0px;
 }
 main .youtube-videos .videos {
-    width: 300px;
-    height: 200px;
+    width: 450px;
+    height: 300px;
     border: black solid 1px;
     border-radius: 10px;
+}
+main .profile-link {
+    border: black solid 1px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 30px;
+}
+main .profile-link .photo {
+    border: black solid 1px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+main .profile-link .sub-button {
+    width: 100px;
+    height: 100px;
+}
+main .profile-link .button {
+    border: black solid 1px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 22, 22);
 }
 /*---------------------------------------*/
 footer {
