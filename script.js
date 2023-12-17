@@ -1,6 +1,6 @@
+function alerta() {
+    var butao = document.getElementById("test")
 
-function changeLanguage() {
-    var selectLanguage = document.getElementById('idioma')
-    selectLanguage.onclick = alert('test')
+    butao.onclick = alerta('TEste')
 }
 
