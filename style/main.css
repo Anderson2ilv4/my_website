@@ -13,7 +13,6 @@ body {
 
 header {
     height: fit-content;
-    border: red solid 1px;
 }
 header img {
     width: 20px;
@@ -61,7 +60,6 @@ header .initial-content {
 /*---------------------------------------*/
 main {
     height: fit-content;
-    border: blue solid 2px;
 }
 main .presentation {
     height: fit-content;
@@ -69,7 +67,6 @@ main .presentation {
 }
 main .knowledge {
     height: fit-content;
-    border: black solid 1px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -83,7 +80,6 @@ main .knowledge img {
 }
 main .courses {
     height: fit-content;
-    border: green solid ;
     padding: 20px;
 }
 main #projects {
@@ -168,16 +164,18 @@ main .profile-link .button {
 /*---------------------------------------*/
 footer {
     height: fit-content;
-    border: red solid 2px;
 }
 footer .info {
-    border: black solid 1px;
     display: flex;
     justify-content: space-evenly;
-    padding: 0px 10px;
+    padding: 10px 10px;
+}
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 footer .social {
-    border: blue solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
