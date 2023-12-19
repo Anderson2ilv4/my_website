@@ -86,7 +86,7 @@ main .courses {
     height: fit-content;
     padding: 20px;
 }
-main #projects {
+main .projects {
     padding: 20px;
 }
 main .project1 {
@@ -118,7 +118,7 @@ main .project2 .preview {
     min-width: 300px;
     min-height: 200px;
 }
-main #videos {
+main .videos {
     padding: 20px;
     display: flex;
     flex-direction: column;
