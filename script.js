@@ -1,6 +1,6 @@
 const ptButton = document.getElementById('ptButton')
 const enButton = document.getElementById('enButton')
-const dkButton = document.getElementById('dark-mode')
+const toggle = document.getElementById('toggle')
 
 document.getElementById('title').innerHTML = localStorage.getItem('title')
 document.getElementById('presentation').innerHTML = localStorage.getItem('presentation')
@@ -12,6 +12,11 @@ document.getElementById('videos').innerHTML = localStorage.getItem('videos')
 document.getElementById('projects').innerHTML = localStorage.getItem('projects')
 document.getElementById('subscribe').innerHTML = localStorage.getItem('subscribe')
 document.getElementById('madeBy').innerHTML = localStorage.getItem('madeBy')
+
+document.getElementById('toggle').src = localStorage.getItem('dkMode')
+document.querySelector('body').style.backgroundColor = localStorage.getItem('bgColor')
+document.querySelector('main').style.color = localStorage.getItem('textColor')
+document.getElementById('subscribe').style.color = localStorage.getItem('subColor')
 
 function ptTranslation() {
     var title = document.getElementById('title').innerHTML = 'Portfólio'
@@ -60,11 +65,31 @@ function enTranslation() {
 }
 
 function darkMode() {
-    document.querySelector('body').style.backgroundColor = 'rgb(32, 32, 32)'
-    document.querySelector('body').style.color = 'gray'
-    document.getElementById('subscribe').style.color = 'black'
+    var toggle = document.getElementById('toggle')
+
+    if (toggle.src.endsWith('toggle-off.svg')) {
+        var dkMode = toggle.src = './assets/toggle-on.svg'
+        localStorage.setItem('dkMode', dkMode)
+
+        var headColor = document.querySelector('.initial-content').style.color = 'black'
+        localStorage.setItem('headColor', headColor)
+        var bgColor = document.querySelector('body').style.backgroundColor = 'rgb(32, 32, 32)'
+        localStorage.setItem('bgColor', bgColor)
+        var textColor = document.querySelector('main').style.color = 'gray'
+        localStorage.setItem('textColor', textColor) 
+        var subColor = document.getElementById('subscribe').style.color = 'black' 
+        localStorage.setItem('subColor', subColor)
+    }else {
+        var dkMode = toggle.src = './assets/toggle-off.svg'
+        localStorage.setItem('dkMode', dkMode)
+
+        var bgColor = document.querySelector('body').style.backgroundColor = 'rgb(255, 255, 255)'
+        localStorage.setItem('bgColor', bgColor)
+        var textColor = document.querySelector('main').style.color = 'black'
+        localStorage.setItem('textColor', textColor)
+    }
 }
 
 ptButton.onclick = ptTranslation
 enButton.onclick = enTranslation
-dkButton.onclick = darkMode
+toggle.onclick = darkMode
