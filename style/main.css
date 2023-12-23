@@ -41,7 +41,6 @@ header #dark-mode {
 }
 header .language {
     display: flex;
-    border: black solid 1px;
 }
 /*temporary*/
 .actions div {
