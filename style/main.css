@@ -193,3 +193,7 @@ footer .social .social-link {
 footer .social .social-link img{
     width: 30px;
 }
+footer a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
