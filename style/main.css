@@ -6,6 +6,9 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
 }
+body a {
+    text-decoration: none;
+}
 .container {
     border: black solid 2px;
 }
@@ -135,7 +138,7 @@ main .youtube-videos .videos {
     border-radius: 10px;
 }
 main .profile-link {
-    border: black solid 1px;
+    /*border: black solid 1px;*/
     width: fit-content;
     height: fit-content;
     border-radius: 10px;
@@ -144,10 +147,19 @@ main .profile-link {
     padding: 10px 20px;
     gap: 30px;
 }
+main .profile-link:hover {
+    background-color: rgba(128, 128, 128, .1);
+}
 main .profile-link .photo {
     border: black solid 1px;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+}
+main .profile-link .photo img {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
     border-radius: 50%;
 }
 main .profile-link .sub-button {
@@ -194,6 +206,5 @@ footer .social .social-link img{
     width: 30px;
 }
 footer a {
-    text-decoration: none;
     color: rgb(128, 128, 128);
 }
